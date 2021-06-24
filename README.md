@@ -1,4 +1,4 @@
-# Simple MVC
+# Project2 - Track of the Month (base on a template simple MVC provide by the Wild Code School)
 
 ## Description
 
