@@ -1,0 +1,113 @@
+.video-row {
+    margin-top: var(--mg-between-vid-lines);
+}
+
+.card-body {
+    background-color: var(--primary-color-black);
+}
+.avatar-github {
+    height: 50px;
+    width: auto;
+    border-radius: 40%;
+}
+
+.fa-bolt {
+    color: #FFFF00;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
+
+.power-button{
+    background-color: transparent;
+    border: transparent;
+}
+
+.power-button:hover {
+    transform: scale(1.5);
+    animation-name:bell;
+    animation-duration: .4s;
+}
+
+.fa-info-circle{
+    font-size:2em;
+    text-align: center;
+}
+
+.fa-info-circle:hover{
+    animation-name:bell;
+    animation-duration: .4s;
+}
+
+
+
+@keyframes bell {
+    0% {
+        transform: rotate(-40deg);
+    }
+    33% {
+        transform: rotate(+40deg);
+    }
+    66% {
+        transform: rotate(+40deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+
+
+.power {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: var(--primary-color-red) 0px 0px 2px,
+    var(--primary-color-red) 0px 0px 5px,
+    var(--primary-color-red) 0px 0px 10px;
+}
+
+
+
+.video1 {
+    color: #FFD700;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 3em;
+}
+
+.video2 {
+    color: #c0c0c0;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 3em;
+}
+
+.video3 {
+    color: #b87333;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 3em;
+}
+
+
+button {
+    background-color: var(--primary-color-black);
+    border-color: var(--primary-color-black);
+}
+
+.card {
+    margin-top: 55px;
+}
+
+.podium1 {
+    box-shadow: 0px 0px 10px 11px rgba(250, 205, 0, 1);
+}
+
+.podium2 {
+    box-shadow: 0px 0px 10px 11px rgba(251, 243, 217, 1);
+}
+
+.podium3 {
+    box-shadow: 0px 0px 10px 11px rgba(134, 109, 78, 1);
+}
+
+.input-group-text, .input-group>.custom-select:not(:first-child) {
+    color: black;
+}
+
+

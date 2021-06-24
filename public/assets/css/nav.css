@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+.navbar {
+    background-color: #1c1c1e;
+}
+
+.navbar-nav {
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+
+.navbar-toggler{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.img-fluid {
+    width:80px;
+    height:80px;
+}
+
+.modal-title {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.15em;
+    text-shadow: var(--primary-color-red) 0px 0px 1px,
+    var(--primary-color-red) 0px 0px 2px,
+    var(--primary-color-red) 0px 0px 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: 1000;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.15em;
+}
+
+.nav-link {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.15em;
+    text-shadow: var(--primary-color-blue) 0px 0px 1px,
+    var(--primary-color-blue) 0px 0px 5px,
+    var(--primary-color-blue) 0px 0px 10px;
+}
+
+.fighters-name, .dropdown-item {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.15em;
+    text-shadow: var(--primary-color-red) 0px 0px 1px,
+    var(--primary-color-red) 0px 0px 2px,
+    var(--primary-color-red) 0px 0px 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:var(--text-color);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:var(--text-color);
+}
+
+.nav-item::after {
+    background-color: var(--text-color) ;
+    box-shadow: var(--primary-color-red)  0px 0px 2px,
+    var(--primary-color-red)  0px 0px 4px,
+    var(--primary-color-red) 0px 0px 8px,
+    var(--primary-color-red) 0px 0px 15px;
+    content: "";
+    width: 0;
+    height:0.2px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.dropdown-menu {
+    /*position: absolute;*/
+    /*top: 80px;*/
+    background-color: transparent;
+    border: var(--text-color);
+    /*left: -132px;*/
+}
+.btn {
+    color:white;
+}
+
+.dropdown-item:active {
+    background-color: transparent;
+}
+
+.navbar-nav {
+    width: 60%;
+    flex-flow: row wrap;
+}
+
+.rules{
+    display: flex;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.information {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.on-air{
+    position: fixed;
+    right: 100px;
+    top: 20px;
+}
+
+.disconnect {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu.show{
+    position: absolute;
+    top: 100px;
+    left: -40px;
+}

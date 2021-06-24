@@ -1,0 +1,39 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<div class="container-fluid">
+
+    <div class="row" >
+        <h1 class="nav-link text-center font-weight-bold">{{ styleName['name'] }}</h1>
+    </div>
+
+    {% include 'component/_select_style.html.twig' %}
+
+    {% if (videos | length) > 1 %}
+        <h4>{{ videos | length }} songs trouvées</h4>
+    {% elseif (videos | length) == 1 %}
+        <h4>{{ videos | length }} song trouvée</h4>
+    {% else %}
+        <h4>Aucun résultat</h4>
+    {% endif %}
+
+    <div class="row">
+        {% for video in videos %}
+            <div class="card card-fighters col-lg-3 col-12">
+                <div class="card-header p-0 d-flex justify-content-between">
+                    {% include 'component/_power_button.html.twig' %}
+                    <img class="avatar-github" src="https://avatars.githubusercontent.com/{{ video.github }}">
+                </div>
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ video.youtube_id }}"
+                            id="video {{ video.id }}" allowfullscreen></iframe>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% endblock %}
+    {% block javascript %}
+    <script src="/assets/javascript/styleSelection.js"></script>
+    {% endblock %}
+

@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark pl-5">
+    <a class="navbar-brand ml-4 pl-5" href="/"><img src="/assets/images/logo.png" class="img-fluid logo" alt="Responsive image"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-4 pl-5" id="navbarScroll">
+        <ul class="navbar-nav ml-4 mr-auto my-2 my-lg-0 navbar-nav-scroll d-flex justify-content-lg-between justify-content-start" >
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="/DJSet/index">Mon Compte </a>
+                <div></div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="/Connect/all">Fighters </a>
+                <div></div>
+            </li>
+            {% if session.role == 'admin' %}
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="/admin/index" > Admin </a>
+            </li>
+            {% endif %}
+
+            {% if session is empty %}
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="/Connect/formSignIn" > Inscription</a>
+            </li>
+            {% else %}
+
+             <img class="avatar-github" src="https://avatars.githubusercontent.com/{{ session.github }}">
+            {% endif %}
+
+
+        </ul>
+    </div>
+</nav>

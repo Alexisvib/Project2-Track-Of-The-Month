@@ -1,0 +1,13 @@
+* {
+    /*Color : :*/
+    --primary-color-red: #D81F25;
+    --primary-color-blue: #00AEFF;
+    --primary-color-black: #0A0A0A;
+    --text-color: #FFFFFF;
+    --second-background-color: #1c1c1c;
+
+
+    /*Margin : :*/
+    --mg-between-vid-lines: 25px;
+    --mg-h1-top: 10px;
+}

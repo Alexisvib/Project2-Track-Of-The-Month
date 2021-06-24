@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig' %}
+
+    {% block content %}
+        <form class="container form-connect" method="post" action="/Connect/connectUser">
+
+            <h4 class="nav-link"> CONNECTEZ-VOUS</h4>
+
+            <div class="col-md-6 col-sm-6 col-lg-6 form-floating mb-3">
+                <label for="pseudo" class="form-label" id="floatingInputGrid">Pseudo*</label>
+                <input type="text" class="form-control" id="pseudo" name="pseudo">
+                {% if  errors.isPseudoExist  %}
+                    <div class="alert-danger" role="alert">{{ errors.isPseudoExist }}</div>
+                {% endif %}
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-lg-6 form-floating mb-3">
+                <label for="inputPassword5" class="form-label" id="floatingInputGrid">Password*</label>
+                <input type="password" id="inputPassword5" class="form-control"
+                       aria-describedby="passwordHelpBlock" name="password">
+                {% if  errors.isPasswordCorrect  %}
+                    <div class="alert-danger" role="alert">{{ errors.isPasswordCorrect }}</div>
+                {% endif %}
+            </div>
+
+
+            <div class="col-md-6 col-sm-6 col-lg-6 form-floating mb-3">
+                <button type="submit" class="btn-danger"> ENVOYER</button>
+            </div>
+        </form>
+    {% endblock %}
