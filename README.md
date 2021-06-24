@@ -33,7 +33,3 @@ If you develop on Windows, you should edit you git configuration to change your 
 An example (a basic list of items) is provided (you can load the *simple-mvc.sql* file in a test database). The accessible URLs are :
 
 * Home page at [localhost:8000/](localhost:8000/)
-
-## How does URL routing work ?
-
-![Simple MVC.png](https://raw.githubusercontent.com/WildCodeSchool/simple-mvc/master/Simple%20-%20MVC.png)
