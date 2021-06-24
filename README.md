@@ -30,13 +30,11 @@ If you develop on Windows, you should edit you git configuration to change your 
 
 `git config --global core.autocrlf true`
 
-
 ## Purpose of the Application  
-Create an account
-Post music with the URL of Youtube
-You can vote for the music you like with the lightning bolt
-Finally you can obtain badge according to the number of vote you have done or with the number of music you have added to the platform.
-
+1. Create an account
+2. Post music with the URL of Youtube
+3. You can vote for the music you like with the lightning bolt
+4. Finally you can obtain badge according to the number of vote you have done or with the number of music you have added to the platform.
 
 
 ## ScreenShot  
