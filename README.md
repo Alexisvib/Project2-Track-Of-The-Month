@@ -28,8 +28,7 @@ If you develop on Windows, you should edit you git configuration to change your 
 
 `git config --global core.autocrlf true`
 
-## Example 
+## ScreenShot  
 
-An example (a basic list of items) is provided (you can load the *simple-mvc.sql* file in a test database). The accessible URLs are :
+![picture.png](picture.png)
 
-* Home page at [localhost:8000/](localhost:8000/)
